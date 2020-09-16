@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int main ()
+{
+  float s_req, e_r1, e_r2;
 
-int main() {
-  float s_km,e_ms, cst;
+  scanf("%f",&e_r1);
+  scanf("%f",&e_r2);
 
-  cst=3.6;
-  scanf("%f",&e_ms);
+  s_req = ((e_r1*e_r2)/(e_r1+e_r2));
 
-  s_km=e_ms*cst;
+  printf("resistencia equivalente:%f\n",s_req);
 
-  printf("km/h:%f\n",s_km);
   return 0;
 }
