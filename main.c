@@ -1,16 +1,19 @@
+
+//cálculo área do retângulo
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
+int main()
 {
-  float s_req, e_r1, e_r2;
+  float e_lat1, e_lat2,s_area;
 
-  scanf("%f",&e_r1);
-  scanf("%f",&e_r2);
+  scanf("%f",&e_lat1);
+  scanf("%f",&e_lat2);
 
-  s_req = ((e_r1*e_r2)/(e_r1+e_r2));
+  s_area= e_lat1*e_lat2;
 
-  printf("resistencia equivalente:%f\n",s_req);
+printf("area do retângulo:%f\n",s_area);
 
-  return 0;
+return 0;
+
 }
