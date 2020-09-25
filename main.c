@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int main ()
+{
+  float s_req, e_r1, e_r2;
 
-int main() {
-  float e_v,e_i,s_r;
-    printf("inserir valor de tensão:");
-    scanf("%f",&e_v);
-    printf("inserir valor de corrente:");
-    scanf("%f",&e_i);
+  scanf("%f",&e_r1);
+  scanf("%f",&e_r2);
 
-    s_r=e_v/e_i;
+  s_req = ((e_r1*e_r2)/(e_r1+e_r2));
 
-      printf("resistência:%f\n",s_r);
+  printf("resistencia equivalente:%f\n",s_req);
 
-      return 0;
-  
+  return 0;
 }
